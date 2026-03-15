@@ -6,3 +6,13 @@ class Auto:
     def __init__(self, brand):
         self.brand = brand
         self.passengers = []
+    def add_passengers(self, *args):
+        for passenger in args:
+            self.passengers.append(passenger)
+    def print_passengers_names(self):
+        if self.passengers != []:
+            print(f"Names of {self.brand} passengers")
+            for passenger in self.passengers:
+                print(passenger.name)
+        else:
+            print(f"No passengers found in {self.brand}")
