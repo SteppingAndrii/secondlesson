@@ -16,3 +16,9 @@ class Auto:
                 print(passenger.name)
         else:
             print(f"No passengers found in {self.brand}")
+
+nick = Human("Nick")
+kate = Human("Kate")
+car = Auto("Bugatti")
+car.add_passengers(nick, kate)
+car.print_passengers_names()
